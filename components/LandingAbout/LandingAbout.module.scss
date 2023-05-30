@@ -1,0 +1,22 @@
+@import '../../sass/mixin';
+
+.aboutMob {
+  display: none;
+}
+
+.aboutPC {
+  display: block;
+}
+
+@include md {
+  .aboutMob {
+    display: block;
+  }
+  .aboutPC {
+    display: none;
+  }
+}
+
+.wrapper {
+  padding: 50px 0px 40px 0px;
+}

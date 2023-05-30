@@ -1,0 +1,99 @@
+@import '../../sass/mixin';
+
+.footer {
+  display: flex;
+  background-color: #815720;
+  z-index: 3;
+  padding: 30px 20px;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  margin: 0px 30px 30px 0px;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 120px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbe9d2;
+  border-radius: 10px;
+  margin: 0px 10px 20px 0px;
+}
+
+.phone, .address {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.phoneNumber, .text {
+  color: #fff;
+  margin: 0px 0px 0px 15px;
+  font-weight: 400;
+}
+
+.tel {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialsLinks {
+  display: flex;
+  margin-top: 15px;
+}
+
+.link {
+  margin-right: 10px;
+}
+
+.map {
+  margin-left: auto;
+}
+
+@include lg {
+  .footer {
+    flex-direction: column;
+  }
+  .map {
+    width: 100%;
+  } 
+}
+
+@include md {
+  .content {
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+@include sm {
+  .content {
+    flex-direction: column;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  .address {
+    margin: 20px 0px 20px 0px;
+  }
+  .map {
+    margin-top: 20px;
+  }
+}

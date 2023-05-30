@@ -1,0 +1,20 @@
+@import '../../app/variables.scss';
+
+.button {
+    width: 180px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $buttonColor;
+    border-radius: $buttonBorder;
+    font-family: $Poppins;
+    color: #fff;
+    font-size: 16px ;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: $buttonColorHover;
+    transition: 0.3s ease;
+}

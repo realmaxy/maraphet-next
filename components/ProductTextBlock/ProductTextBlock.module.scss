@@ -1,0 +1,30 @@
+@import '../../sass/mixin';
+
+.block {
+  width:fit-content;
+}
+
+.title {
+  width: 400px;
+}
+
+.text {
+  width: 500px;
+  margin: 20px 0px 30px 0px;
+  font-size: 16px;
+}
+
+@include md {
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+}

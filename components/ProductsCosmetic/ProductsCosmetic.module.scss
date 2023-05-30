@@ -1,0 +1,82 @@
+@import '../../sass/mixin';
+
+.wrapper {
+  background: url(../../public/cosmeticvectortop.png) no-repeat;
+  background-position-x: right;
+  position: relative;
+  height: 800px;
+  padding: 75px 0px 0px 0px;
+}
+
+.wrapper::before {
+  content: url(../../public/cosmeticvectorleft.png);
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper::after {
+  content: url(../../public/cosmeticvectorright.png);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.product::before {
+  content: '';
+  position: absolute;
+  background: #F9DEBB;
+  filter: blur(79.5px);
+  width: 376px;
+  height: 376px;
+  left: 45%;
+  top: -50px;
+}
+
+.product::after {
+  content: '';
+  position: absolute;
+  background: #F9DEBB;
+  filter: blur(79.5px);
+  width: 376px;
+  height: 376px;
+  right: 45%;
+  bottom: -100px;
+}
+
+.img{
+  z-index: 2;
+  width: 500px;
+}
+
+@include md {
+  .product::before {
+    display: none;
+  }
+  .product::after {
+    display: none;
+  }
+  .wrapper::after {
+    display: none;
+  }
+  .product {
+    margin-top: 70px;
+  }
+}
+
+@include sm {
+  .wrapper::before {
+    display: none;
+  }
+  .wrapper {
+    background: none;
+  }
+  .img {
+    width: 100%;
+  }
+}
